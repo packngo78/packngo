@@ -132,6 +132,8 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .page-title {
@@ -510,8 +512,33 @@
                 gap: 8px;
             }
 
+            .page-title {
+                font-size: 18px;
+            }
+
             .product-count {
-                font-size: 14px;
+                font-size: 12px;
+            }
+
+            .filters-bar {
+                padding-bottom: 10px;
+                margin-bottom: 15px;
+            }
+
+            .sort-section {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .sort-section span {
+                font-size: 12px;
+            }
+
+            .sort-select {
+                font-size: 11px;
+                padding: 6px 28px 6px 8px;
+                flex: 1;
+                max-width: 150px;
             }
         }
 
@@ -565,24 +592,39 @@
                 padding: 10px 8px;
             }
 
+            .page-header {
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 20px;
+            }
+
             .page-title {
                 font-size: 20px;
             }
 
+            .product-count {
+                font-size: 13px;
+                white-space: nowrap;
+            }
+
+            .filters-bar {
+                margin-bottom: 20px;
+                padding-bottom: 12px;
+            }
+
             .sort-section {
-                flex-direction: column;
-                align-items: flex-end;
-                gap: 5px;
+                gap: 8px;
             }
 
             .sort-section span {
-                font-size: 12px;
+                font-size: 13px;
             }
 
             .sort-select {
                 font-size: 12px;
-                width: 100%;
-                max-width: 180px;
+                padding: 8px 30px 8px 10px;
+                max-width: 140px;
             }
 
             header {
