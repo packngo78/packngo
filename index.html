@@ -146,13 +146,12 @@
 
         .filters-bar {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
             margin-bottom: 30px;
             padding-bottom: 20px;
             border-bottom: 1px solid #e0e0e0;
             gap: 10px;
-            flex-wrap: wrap;
         }
 
         .filter-btn {
@@ -447,26 +446,21 @@
             }
 
             .filters-bar {
-                flex-direction: column;
-                align-items: stretch;
+                flex-direction: row;
+                align-items: center;
                 gap: 12px;
                 padding-bottom: 15px;
-            }
-
-            .filter-btn {
-                width: 100%;
-                justify-content: center;
-                padding: 10px;
+                justify-content: flex-end;
             }
 
             .sort-section {
-                width: 100%;
-                justify-content: space-between;
+                width: auto;
+                justify-content: flex-end;
             }
 
             .sort-select {
-                flex: 1;
-                max-width: none;
+                flex: 0;
+                max-width: 200px;
                 padding: 10px 35px 10px 12px;
             }
 
@@ -505,12 +499,20 @@
                 font-size: 20px;
             }
 
+            .sort-section {
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 5px;
+            }
+
             .sort-section span {
-                font-size: 13px;
+                font-size: 12px;
             }
 
             .sort-select {
                 font-size: 12px;
+                width: 100%;
+                max-width: 180px;
             }
 
             header {
@@ -591,10 +593,6 @@
         </div>
 
         <div class="filters-bar">
-            <button class="filter-btn" onclick="toggleSidebar()">
-                <span>☰</span>
-                <span>Show Filters</span>
-            </button>
             <div class="sort-section">
                 <span>Sort by:</span>
                 <select class="sort-select" onchange="sortProducts(this.value)">
