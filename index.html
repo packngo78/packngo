@@ -37,11 +37,30 @@
             z-index: 100;
         }
 
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
         .logo {
             font-size: 32px;
             font-weight: 700;
             color: #fff;
             letter-spacing: 3px;
+        }
+
+        .phone-label {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #9370DB;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .phone-icon {
+            font-size: 14px;
         }
 
         .header-icons {
@@ -474,6 +493,14 @@
                 letter-spacing: 2px;
             }
 
+            .phone-label {
+                font-size: 12px;
+            }
+
+            .phone-icon {
+                font-size: 12px;
+            }
+
             .promo-banner {
                 font-size: 12px;
                 padding: 12px 10px;
@@ -587,6 +614,14 @@
                 letter-spacing: 1.5px;
             }
 
+            .phone-label {
+                font-size: 11px;
+            }
+
+            .phone-icon {
+                font-size: 11px;
+            }
+
             .promo-banner {
                 font-size: 11px;
                 padding: 10px 8px;
@@ -639,11 +674,17 @@
 </head>
 <body>
     <div class="promo-banner">
-        LIMITED-TIME OFFER UPTO 30% OFF - SHOP NOW
+        Order Now
     </div>
 
     <header>
-        <div class="logo">PACK N GO</div>
+        <div class="logo-container">
+            <div class="logo">PACK N GO</div>
+            <div class="phone-label">
+                <span class="phone-icon">📞</span>
+                <span>966570928796</span>
+            </div>
+        </div>
         <div class="header-icons">
             <button class="icon-btn menu-btn" onclick="toggleSidebar()">☰</button>
         </div>
@@ -893,7 +934,7 @@
             if (!currentProduct) return;
             
             const message = `Hi! I'm interested in ordering:\n\n${currentProduct.name}\nPrice: ${currentProduct.offer} SR\n\nPlease provide more information.`;
-            const phoneNumber = '966500000000';
+            const phoneNumber = '966570928796';
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             
             window.open(whatsappUrl, '_blank');
