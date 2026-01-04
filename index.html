@@ -18,7 +18,7 @@
 
         .promo-banner {
             background: #C4A962;
-            color: #2d5016;
+            color: #9c27b0;
             text-align: center;
             padding: 15px;
             font-size: 16px;
@@ -27,6 +27,15 @@
             font-family: 'Georgia', 'Palatino', serif;
             font-style: italic;
             text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+        
+        .promo-icon {
+            font-size: 24px;
+            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.1));
         }
 
         header {
@@ -63,13 +72,14 @@
             display: flex;
             align-items: center;
             gap: 6px;
-            color: #2a2a2a;
+            color: #9c27b0;
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .phone-icon {
             font-size: 14px;
+            color: #9c27b0;
         }
 
         .header-icons {
@@ -587,6 +597,11 @@
                 font-size: 14px;
                 padding: 12px 10px;
                 letter-spacing: 1px;
+                gap: 10px;
+            }
+            
+            .promo-icon {
+                font-size: 20px;
             }
 
             .page-title {
@@ -709,6 +724,11 @@
                 font-size: 13px;
                 padding: 10px 8px;
                 letter-spacing: 1px;
+                gap: 8px;
+            }
+            
+            .promo-icon {
+                font-size: 18px;
             }
 
             .page-header {
@@ -758,7 +778,8 @@
 </head>
 <body>
     <div class="promo-banner">
-        Pack your dreams
+        <span class="promo-icon">🧳</span>
+        <span>Pack your dreams</span>
     </div>
 
     <header>
