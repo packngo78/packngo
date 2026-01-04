@@ -17,7 +17,7 @@
         }
 
         .promo-banner {
-            background: #1a1a1a;
+            background: #C4A962;
             color: #fff;
             text-align: center;
             padding: 15px;
@@ -27,7 +27,7 @@
         }
 
         header {
-            background: #2a2a2a;
+            background: #B59A4F;
             padding: 20px 30px;
             display: flex;
             justify-content: space-between;
@@ -38,6 +38,18 @@
         }
 
         .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-image {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+
+        .logo-text-container {
             display: flex;
             flex-direction: column;
             gap: 5px;
@@ -54,7 +66,7 @@
             display: flex;
             align-items: center;
             gap: 6px;
-            color: #9370DB;
+            color: #fff;
             font-size: 14px;
             font-weight: 500;
         }
@@ -100,7 +112,7 @@
         }
 
         .sidebar-header {
-            background: #2a2a2a;
+            background: #B59A4F;
             color: #fff;
             padding: 20px;
             display: flex;
@@ -384,7 +396,7 @@
         }
 
         .thumbnail.active {
-            border-color: #2a2a2a;
+            border-color: #B59A4F;
         }
 
         .product-details h2 {
@@ -491,6 +503,11 @@
             .logo {
                 font-size: 24px;
                 letter-spacing: 2px;
+            }
+
+            .logo-image {
+                width: 40px;
+                height: 40px;
             }
 
             .phone-label {
@@ -614,6 +631,11 @@
                 letter-spacing: 1.5px;
             }
 
+            .logo-image {
+                width: 35px;
+                height: 35px;
+            }
+
             .phone-label {
                 font-size: 11px;
             }
@@ -679,10 +701,13 @@
 
     <header>
         <div class="logo-container">
-            <div class="logo">PACK N GO</div>
-            <div class="phone-label">
-                <span class="phone-icon">📞</span>
-                <span>966570928796</span>
+            <img src="https://i.imgur.com/9gCptAS.png" alt="Pack N Go Logo" class="logo-image">
+            <div class="logo-text-container">
+                <div class="logo">PACK N GO</div>
+                <div class="phone-label">
+                    <span class="phone-icon">📞</span>
+                    <span>966570928796</span>
+                </div>
             </div>
         </div>
         <div class="header-icons">
