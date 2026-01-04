@@ -151,32 +151,42 @@
             margin-bottom: 30px;
             padding-bottom: 20px;
             border-bottom: 1px solid #e0e0e0;
+            gap: 10px;
+            flex-wrap: wrap;
         }
 
         .filter-btn {
             background: #fff;
             border: 1px solid #ddd;
-            padding: 10px 20px;
+            padding: 8px 15px;
             cursor: pointer;
             display: flex;
             align-items: center;
-            gap: 10px;
-            font-size: 15px;
+            gap: 8px;
+            font-size: 14px;
+            white-space: nowrap;
         }
 
         .sort-section {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        .sort-section span {
+            font-size: 14px;
+            white-space: nowrap;
         }
 
         .sort-select {
-            padding: 10px 40px 10px 15px;
+            padding: 8px 35px 8px 12px;
             border: 1px solid #ddd;
-            font-size: 15px;
+            font-size: 13px;
             cursor: pointer;
             appearance: none;
-            background: url('data:image/svg+xml;charset=UTF-8,<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="%23666" stroke-width="2"/></svg>') no-repeat right 15px center;
+            background: url('data:image/svg+xml;charset=UTF-8,<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L11 1" stroke="%23666" stroke-width="2"/></svg>') no-repeat right 10px center;
+            max-width: 150px;
         }
 
         .product-grid {
@@ -420,6 +430,91 @@
 
             .sidebar {
                 width: 280px;
+            }
+
+            .logo {
+                font-size: 24px;
+                letter-spacing: 2px;
+            }
+
+            .promo-banner {
+                font-size: 12px;
+                padding: 12px 10px;
+            }
+
+            .page-title {
+                font-size: 24px;
+            }
+
+            .filters-bar {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 12px;
+                padding-bottom: 15px;
+            }
+
+            .filter-btn {
+                width: 100%;
+                justify-content: center;
+                padding: 10px;
+            }
+
+            .sort-section {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .sort-select {
+                flex: 1;
+                max-width: none;
+                padding: 10px 35px 10px 12px;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+
+            .page-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .product-count {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .logo {
+                font-size: 20px;
+                letter-spacing: 1.5px;
+            }
+
+            .promo-banner {
+                font-size: 11px;
+                padding: 10px 8px;
+            }
+
+            .page-title {
+                font-size: 20px;
+            }
+
+            .sort-section span {
+                font-size: 13px;
+            }
+
+            .sort-select {
+                font-size: 12px;
+            }
+
+            header {
+                padding: 15px 20px;
             }
         }
     </style>
