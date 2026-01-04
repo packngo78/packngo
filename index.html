@@ -32,37 +32,25 @@
         header {
             background: #C4A962;
             padding: 20px 30px;
-            display: grid;
-            grid-template-columns: auto 1fr auto;
-            grid-template-rows: auto auto;
-            gap: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
         .logo-container {
-            grid-column: 1;
-            grid-row: 1;
-        }
-        
-        .header-icons {
-            grid-column: 3;
-            grid-row: 1;
             display: flex;
-            gap: 15px;
-            align-items: center;
-            flex: 0 0 auto;
+            flex-direction: column;
+            gap: 3px;
         }
-        
-        .bottom-promo {
-            grid-column: 1 / -1;
-            grid-row: 2;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 5px;
-            border-top: 1px solid rgba(42, 42, 42, 0.1);
+
+        .logo {
+            font-size: 32px;
+            font-weight: 700;
+            color: #2a2a2a;
+            letter-spacing: 2px;
         }
         
         .promo-dreams {
@@ -81,19 +69,6 @@
             transform: rotate(30deg);
         }
 
-        .logo-text-container {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .logo {
-            font-size: 32px;
-            font-weight: 700;
-            color: #2a2a2a;
-            letter-spacing: 2px;
-        }
-
         .phone-label {
             display: flex;
             align-items: center;
@@ -106,6 +81,14 @@
         .phone-icon {
             font-size: 11px;
             color: #2a2a2a;
+        }
+        
+        .header-icons {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            align-items: flex-end;
+            flex: 0 0 auto;
         }
 
         .icon-btn {
@@ -601,7 +584,7 @@
             }
 
             .logo {
-                font-size: 32px;
+                font-size: 28px;
                 letter-spacing: 2px;
             }
 
@@ -812,18 +795,7 @@
 <body>
     <header>
         <div class="logo-container">
-            <div class="logo-text-container">
-                <div class="logo">PACK N GO</div>
-            </div>
-        </div>
-        <div class="header-icons">
-            <button class="icon-btn menu-btn" onclick="toggleSidebar()">☰</button>
-        </div>
-        <div class="bottom-promo">
-            <div class="phone-label">
-                <span class="phone-icon">📞</span>
-                <span>966570928796</span>
-            </div>
+            <div class="logo">PACK N GO</div>
             <div class="promo-dreams">
                 <svg class="dreams-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="5" y="6" width="14" height="12" rx="1" stroke="#2a2a2a" stroke-width="2" fill="none"/>
@@ -835,6 +807,13 @@
                     <line x1="10" y1="10" x2="14" y2="10" stroke="#2a2a2a" stroke-width="2" stroke-linecap="round"/>
                 </svg>
                 <span>Pack your dreams</span>
+            </div>
+        </div>
+        <div class="header-icons">
+            <button class="icon-btn menu-btn" onclick="toggleSidebar()">☰</button>
+            <div class="phone-label">
+                <span class="phone-icon">📞</span>
+                <span>966570928796</span>
             </div>
         </div>
     </header>
