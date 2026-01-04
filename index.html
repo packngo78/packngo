@@ -133,6 +133,7 @@
             overflow-x: hidden;
             -webkit-overflow-scrolling: touch;
             position: relative;
+            padding-bottom: 80px;
         }
 
         .sidebar-content::-webkit-scrollbar {
@@ -153,10 +154,11 @@
         }
 
         .scroll-indicator {
-            position: absolute;
+            position: fixed;
             bottom: 0;
-            left: 0;
+            left: auto;
             right: 0;
+            width: 320px;
             height: 60px;
             background: linear-gradient(to top, rgba(255,255,255,0.95), rgba(255,255,255,0));
             pointer-events: none;
@@ -166,6 +168,10 @@
             padding-bottom: 10px;
             opacity: 1;
             transition: opacity 0.3s;
+        }
+        
+        .sidebar:not(.open) .scroll-indicator {
+            display: none;
         }
 
         .scroll-indicator.hidden {
@@ -556,6 +562,10 @@
             }
 
             .sidebar {
+                width: 280px;
+            }
+            
+            .scroll-indicator {
                 width: 280px;
             }
 
